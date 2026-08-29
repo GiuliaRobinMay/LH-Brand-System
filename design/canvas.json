@@ -1,13 +1,19 @@
 {
   "artboards": [
-    { "file": "Main.dc.html",    "x": 0,    "y": 0,   "w": 980,  "h": 1560, "title": "Type scale" },
-    { "file": "Guide.dc.html",   "x": 1100, "y": 0,   "w": 794,  "h": 1123, "title": "Quick Guide page (A4)", "print": "fixed" },
-    { "file": "Article.dc.html", "x": 2010, "y": 0,   "w": 1280, "h": 720,  "title": "Article header 16:9" },
-    { "file": "Quote.dc.html",   "x": 2010, "y": 900, "w": 900,  "h": 900,  "title": "Member quote (square post)" }
+    { "file": "Main.dc.html",       "x": 0,    "y": 0,    "w": 1000, "h": 1400, "title": "Cover", "print": "fixed" },
+    { "file": "Story.dc.html",      "x": 1120, "y": 0,    "w": 1000, "h": 1400, "title": "01 · The story", "print": "fixed" },
+    { "file": "Colour.dc.html",     "x": 2240, "y": 0,    "w": 1000, "h": 1400, "title": "02 · Colour", "print": "fixed" },
+    { "file": "Type.dc.html",       "x": 3360, "y": 0,    "w": 980,  "h": 1560, "title": "03 · Typography", "print": "fixed" },
+    { "file": "Character.dc.html",  "x": 4460, "y": 0,    "w": 1000, "h": 1400, "title": "04 · The character", "print": "fixed" },
+    { "file": "Components.dc.html", "x": 5580, "y": 0,    "w": 1000, "h": 1400, "title": "05 · Components", "print": "fixed" },
+    { "file": "Banners.dc.html",    "x": 0,    "y": 1800, "w": 1440, "h": 900,  "title": "06 · Community surfaces", "print": "fixed" },
+    { "file": "Guide.dc.html",      "x": 1560, "y": 1800, "w": 794,  "h": 1123, "title": "Applied · Quick Guide (A4)", "print": "fixed" },
+    { "file": "Article.dc.html",    "x": 2480, "y": 1800, "w": 1280, "h": 720,  "title": "Applied · Article header", "print": "fixed" },
+    { "file": "Quote.dc.html",      "x": 3880, "y": 1800, "w": 900,  "h": 900,  "title": "Applied · Member quote", "print": "fixed" }
   ],
   "annotations": [
-    { "id": "note-type", "x": 0, "y": -150, "w": 460, "text": "Anton shouts once per surface. DM Sans does everything else.\nBody 18px floor on screen, 12pt in print." },
-    { "id": "note-apply", "x": 1100, "y": -150, "w": 520, "text": "The applications are the test. If the type scale works here, on real member content, it's right." }
+    { "id": "note-sheet", "x": 0, "y": -190, "w": 640, "text": "THE BRANDING SHEET — read left to right.\nStory, colour, type, character, components, surfaces." },
+    { "id": "note-applied", "x": 0, "y": 1610, "w": 620, "text": "Applications. The system is only right if it works on these." }
   ],
   "launch": { "view": "canvas" }
 }
