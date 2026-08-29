@@ -1,0 +1,14 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html",    "x": 0,    "y": 0,    "w": 1440, "h": 900,  "title": "Hero — light ground" },
+    { "file": "Alt.dc.html",     "x": 1560, "y": 0,    "w": 1440, "h": 900,  "title": "Hero — colour ground" },
+    { "file": "Objects.dc.html", "x": 3120, "y": 0,    "w": 1000, "h": 1400, "title": "The object library" },
+    { "file": "Banner.dc.html",  "x": 0,    "y": 1080, "w": 1560, "h": 334,  "title": "Space banner (tall) 1560 × 334" },
+    { "file": "Post.dc.html",    "x": 1680, "y": 1080, "w": 1080, "h": 1080, "title": "Social post 1080 × 1080" }
+  ],
+  "annotations": [
+    { "id": "note-dir", "x": 0, "y": -170, "w": 700, "text": "DIRECTION — huge type, floating objects, lots of air.\nFrom Slush and Tines, with objects that mean something here." },
+    { "id": "note-ground", "x": 1560, "y": -170, "w": 560, "text": "Same direction, saturated ground. Which reads better for a stressed reader on a phone?" }
+  ],
+  "launch": { "view": "canvas" }
+}

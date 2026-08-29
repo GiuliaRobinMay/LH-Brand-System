@@ -60,3 +60,40 @@ Two devices were introduced here and are not yet approved:
 - **The question mark as a universal system icon** — space icons, badges, callout markers,
   banner pattern. Follows from the character rules but is its first use as a system
   device rather than a costume print.
+
+## Lesko Direction — Objects (exploration)
+
+https://claude.ai/code/artifact/0b42bd47-69ad-491f-a5ee-7721d329cd10
+
+The chosen visual direction, from Giulia's picks in the inspiration round: **Slush**
+("Your money. Unstuck.") and **Tines** — huge display type, floating cut-out objects,
+lots of air.
+
+| Artboard | What it is |
+|---|---|
+| `Main.dc.html` | Hero, light ground |
+| `Alt.dc.html` | Hero, saturated blue ground |
+| `Objects.dc.html` | The object library — eight objects, drawn as inline SVG |
+| `Banner.dc.html` | Applied · Space banner tall, 1560 × 334 |
+| `Post.dc.html` | Applied · Social post 1080 × 1080, the anti-scam line |
+
+Layout manifest: `canvas-direction.json`.
+
+### The object library
+
+Every object names something real in the member journey — that is what stops it being
+generic startup confetti:
+
+question mark (asking) · heart (from the card suits) · telephone (the call) ·
+envelope (the answer that arrives) · house (housing, rent) · call sheet (step 2) ·
+his glasses · key (the hidden door)
+
+**How objects behave:** flat fill, one brand colour each, bold black outline of even
+weight. Scattered with generous air, rotated a few degrees so they feel dropped rather
+than placed. **Never more than six on a surface, never overlapping the type.** They fill
+the air around the message; they never compete with it.
+
+### Open decisions
+
+- Light ground or saturated ground
+- Whether these are the right eight objects
