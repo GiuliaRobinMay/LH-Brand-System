@@ -1,0 +1,13 @@
+{
+  "artboards": [
+    { "file": "Main.dc.html",    "x": 0,    "y": 0,   "w": 980,  "h": 1560, "title": "Type scale" },
+    { "file": "Guide.dc.html",   "x": 1100, "y": 0,   "w": 794,  "h": 1123, "title": "Quick Guide page (A4)", "print": "fixed" },
+    { "file": "Article.dc.html", "x": 2010, "y": 0,   "w": 1280, "h": 720,  "title": "Article header 16:9" },
+    { "file": "Quote.dc.html",   "x": 2010, "y": 900, "w": 900,  "h": 900,  "title": "Member quote (square post)" }
+  ],
+  "annotations": [
+    { "id": "note-type", "x": 0, "y": -150, "w": 460, "text": "Anton shouts once per surface. DM Sans does everything else.\nBody 18px floor on screen, 12pt in print." },
+    { "id": "note-apply", "x": 1100, "y": -150, "w": 520, "text": "The applications are the test. If the type scale works here, on real member content, it's right." }
+  ],
+  "launch": { "view": "canvas" }
+}

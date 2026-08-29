@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800&display=swap">
+  <style>
+    body { margin: 0; font-family: 'DM Sans', system-ui, sans-serif; }
+    a { color: #3553ae; } a:hover { color: #243a85; }
+  </style>
+</helmet>
+
+<div style="width: 1280px; height: 720px; background: #f4f6f8; position: relative; overflow: hidden; display: flex;">
+
+  <!-- left colour bar -->
+  <div style="width: 24px; background: #3655b3; flex-shrink: 0;"></div>
+
+  <!-- content, inside the text safe area -->
+  <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: center; gap: 28px; padding: 72px 88px;">
+
+    <div style="display: inline-flex; align-items: center; align-self: flex-start; height: 40px; padding: 0 18px; background: #3655b3; color: #ffffff; font-size: 18px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; border-radius: 4px;">Quick Guide</div>
+
+    <div style="font-family: 'Anton', 'DM Sans', Impact, sans-serif; font-size: 104px; line-height: 0.98; letter-spacing: -0.01em; color: #0e1a2b; text-transform: uppercase; max-width: 16ch;">
+      Cut your phone bill<span style="display: inline; background: #fdcc0a; box-decoration-break: clone; -webkit-box-decoration-break: clone; padding: 0 10px;">&nbsp;in half</span>
+    </div>
+
+    <div style="font-size: 26px; font-weight: 400; line-height: 1.45; color: #0e1a2b; max-width: 46ch; text-wrap: pretty;">Federal and nonprofit programs that lower what you pay every month. Real ones, working in 2026.</div>
+
+    <div style="display: flex; align-items: center; gap: 14px; margin-top: 6px;">
+      <div style="width: 28px; height: 28px; border-radius: 50%; background: #fdcc0a; display: flex; align-items: center; justify-content: center; font-family: 'Anton', sans-serif; font-size: 18px; color: #0e1a2b;">?</div>
+      <div style="font-size: 18px; font-weight: 700; color: #4a5666;">Lesko Help · Pay Debt &amp; Bills</div>
+    </div>
+
+  </div>
+
+  <!-- right: space reserved for Matthew, per COSTUMES.md -->
+  <div style="width: 360px; flex-shrink: 0; background: #e7eaee; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px;">
+    <div style="font-size: 16px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #4a5666; text-align: center;">Matthew</div>
+    <div style="font-size: 16px; line-height: 1.5; color: #4a5666; text-align: center; max-width: 24ch;">Blue costume — teach &amp; explain. Presenting pose, cut out, facing into the copy.</div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
