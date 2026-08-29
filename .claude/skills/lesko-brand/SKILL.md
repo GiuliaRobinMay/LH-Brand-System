@@ -92,8 +92,8 @@ AI) · Mr. Question Man (Matthew, member-given).
 
 ## 4. Character rules 🔒
 
-The brand's character is **illustrated Matthew** — comic-book style, white spiked
-hair, round bright-rimmed glasses, question-mark suit.
+The brand's character is **illustrated Matthew** — comic-book style, white spiked hair,
+oversized orange-and-blue glasses, question-mark suit.
 
 | Form | Where | Why |
 |---|---|---|
@@ -103,14 +103,56 @@ hair, round bright-rimmed glasses, question-mark suit.
 
 That last row is a hard rule, not a preference.
 
-⏳ **Open:** three costume variants for different settings. Matthew genuinely wears
-different suits, so variants are on-brand. Base variant so far: yellow suit with
-black question marks, black polka-dot shirt, orange/blue glasses.
+### Generating him 🔒
 
-⏳ **Open:** the character model sheet (turnaround, expressions, poses) that locks
-proportions so every future generation matches.
+**Read `brand/character/GENERATION.md` before generating any Matthew image.** It holds the
+master character block, the scene-line format, the animation formula, and the four failure
+modes that produced a monster and then a stranger on 29 Aug 2026.
 
----
+The three rules that matter most:
+
+1. **Never generate from text alone.** Always attach a reference still from
+   `brand/character/reference/`. The originals were never generated from a prompt.
+2. **Never ban his features.** Banning spiky hair, bared teeth, wide eyes or sharp
+   features deletes the character. The avoid-list is one line: text, watermarks, logos,
+   extra people, photorealism, 3D.
+3. **Never write his real name in a prompt.** He is a real public figure; naming him makes
+   image models refuse or quietly degrade. Describe by attributes only.
+
+And the rule that fixes the unsettling-face problem: *wild hair and a big open laugh are
+not the problem — unsmiling eyes are.* Keep the energy, specify crinkled eye corners,
+lifted cheeks and raised brows.
+
+### Costumes ⏳
+
+Each costume is a signal, not decoration — the right Matthew carries the right message
+before a word is read.
+
+| Costume | Colour role | Job | Status |
+|---|---|---|---|
+| **Yellow**, black question marks | primary yellow | Welcome & everyday. The signature. | 🔒 exists |
+| **Pop-art magenta**, hearts | accent pink | Community and campaign moments | 🔒 exists |
+| **Blue**, white question marks | primary blue | Teach & explain — roadmap, classes, guides | ⏳ to build |
+| **Green**, yellow question marks | support green | Celebrate — Success Stories, wins | ⏳ to build |
+| **Dark**, white question marks | ink | Protect — scam warnings and safety only | ⏳ to build |
+
+The dark costume is the strategic one: when he warns about impersonators he **stops
+performing**. Same character, no circus. The tonal drop is the trust signal, and it is
+counterfeit-resistant — impersonators copy the loud Matthew, never the serious one.
+
+**Orange is not a costume and not a system colour.** He wears it in real photographs, but
+orange sits between yellow (attention) and red (danger) — the two most safety-critical
+signals the brand owns — and would blur exactly the distinction that must never blur.
+
+### The yellow-suit tension, resolved 🔒
+
+Yellow is both his signature suit and the "pay attention" colour. To keep the signal from
+weakening: **the yellow suit is identity, not signal.** The attention role belongs to
+yellow *surfaces* — highlighter bars, callout blocks, ink-on-yellow. Suit and surface do
+different jobs.
+
+⏳ **Open:** the six-pose set (welcome, point up, present to the side, celebrate, palm out,
+at the laptop) as transparent cutouts at one consistent scale.
 
 ## 5. Colour 🔒 (values) / ⏳ (application)
 
