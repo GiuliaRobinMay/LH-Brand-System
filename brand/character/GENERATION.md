@@ -83,20 +83,67 @@ Only the scene line changes. If a result drifts off-model, the scene line is at 
 > bright saturated palette, no gradients, no photographic texture, even flat lighting,
 > crisp linework.
 
-## New still — edit the scene line only
+## The five-slot prompt — the working template
+
+The original kit had one master block plus a scene line. That locks identity but leaves
+no room for a wardrobe. The working structure splits it into five slots: two you never
+touch, two you swap, one fixed render spec.
 
 ```
-Keep this exact character and art style from the reference image.
-[MASTER CHARACTER BLOCK]
-SCENE: <one sentence of what he is doing>.
-Square 1:1 composition, single character only, full figure cut out on a pure white
-background, no props beyond those named. Three small amber-orange triangular spark marks
-near his raised hand. High resolution, crisp vector linework, 4K.
+Use the reference image ONLY for the character's face, hairstyle, glasses design and
+drawing style. Do NOT copy the reference pose, the reference costume, or the reference
+body proportions — all three are different here, as described below.
+
+CHARACTER (identical to the reference): [never edit — see the master block above]
+
+PROPORTIONS — THE MOST IMPORTANT INSTRUCTION: he is a VERY TALL, lean, lanky man, drawn
+at eight heads tall. His legs are long and take up clearly more than half of his total
+height, measured from the ground to his high waistline. His head is SMALL relative to his
+body. Long slim arms, narrow shoulders, slender build, long straight legs. He must read
+unmistakably as a tall lanky elderly gentleman. He is absolutely NOT short, NOT stocky,
+NOT chibi, NOT big-headed; his legs are never short or stubby and his torso is never squat.
+
+COSTUME (new — not the reference costume): [from COSTUMES.md]
+
+POSE (new — not the reference pose): [one sentence]
+
+Drawn as clean 2D vector comic-book art: bold black outlines of even weight, flat
+cel-shaded colour with minimal soft shading and small white highlights, bright saturated
+palette, no gradients, no photographic texture, even flat lighting, crisp linework.
+[FRAMING — see below]. Single character only, cut out on a pure white background. Three
+small amber-orange triangular spark marks near his raised hand. High resolution, crisp
+vector linework, 4K.
+
 Avoid: text, watermarks, logos, extra people, photorealism, 3D render.
 ```
 
-Model: `nano_banana_pro`, `aspect_ratio: "1:1"`, `resolution: "2k"`, reference in
-`medias` with role `image_references`.
+| Slot | Changes? |
+|---|---|
+| Opening instruction | never |
+| CHARACTER | never — identity |
+| PROPORTIONS | never — build |
+| COSTUME | per costume, from `COSTUMES.md` |
+| POSE | per image |
+| Render + framing | never |
+
+Model: `nano_banana_pro`, `resolution: "2k"`, reference in `medias` with role
+`image_references`.
+
+## Framing — the fifth failure mode
+
+**Full-body poses use a 2:3 portrait frame. Square is only for chest-up crops.**
+
+Three separate rounds produced a short, stubby Matthew before the real cause showed up:
+a wide arm-span in a square frame forces the model to scale the whole figure down to fit,
+and short legs are the result. No amount of "tall" in the prompt beats the frame. The
+original stills never had this problem because they are chest-up crops.
+
+- Full body → `aspect_ratio: "2:3"`, plus:
+  *"Tall portrait composition; the standing figure fills the entire height of the tall
+  frame from the top of his hair to the soles of his shoes, with only a small even margin
+  above and below."*
+- Chest-up → `aspect_ratio: "1:1"`
+- Keep arms fairly close to the body on standing poses so the silhouette stays narrow.
 
 ## Animation — the formula that worked
 
@@ -129,6 +176,9 @@ Animate from an approved still, never from text.
 | **Format** | Square 1:1, single figure, cut out on pure white, occasional soft grey contact shadow, no text anywhere. |
 
 ## Costumes
+
+**See `COSTUMES.md` for the three approved costumes, the wardrobe rules, and what was
+tried and rejected.**
 
 **A — Yellow (signature).** Yellow suit covered in bold black question marks. Black shirt
 with large flat polka dots in red, blue, green, yellow, magenta. Yellow belt, gold buckle.
