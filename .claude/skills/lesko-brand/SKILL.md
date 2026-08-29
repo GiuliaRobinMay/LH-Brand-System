@@ -243,10 +243,10 @@ Never do these:
 - **Anything that reads scammy** — urgency timers, "secrets", fake official seals,
   implied government affiliation, guaranteed amounts.
 - **Invented dollar figures.** Real and sourced, or bracketed as `[AMOUNT]`.
-- **Playing-card suits (♠♥♦♣)** as decoration. They appear in older documents;
-  they say luck and gambling. Grants are a learnable process, not a lottery, and
-  that framing is the scammer's, not Matthew's. ⏳ Confirm with Giulia before removing
-  from any existing template.
+- ~~Playing-card suits~~ — **I was wrong about this.** I flagged the card suits as a
+  gambling risk; Giulia confirmed the **heart** from the playing-card set is a real and
+  important brand device and stays. The heart belongs to the brand's vocabulary alongside
+  the question mark. Do not remove it.
 - **Small, low-contrast, dense layouts.** They fail this audience specifically.
 - **Corporate calm applied to Matthew himself.** The frame gets calm so Matthew can
   stay loud. Never the reverse.
