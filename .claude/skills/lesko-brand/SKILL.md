@@ -123,26 +123,32 @@ And the rule that fixes the unsettling-face problem: *wild hair and a big open l
 not the problem — unsmiling eyes are.* Keep the energy, specify crinkled eye corners,
 lifted cheeks and raised brows.
 
-### Costumes ⏳
+### Costumes 🔒
 
-Each costume is a signal, not decoration — the right Matthew carries the right message
-before a word is read.
+**Full detail, exact costume lines and wardrobe rules: `brand/character/COSTUMES.md`.**
 
-| Costume | Colour role | Job | Status |
-|---|---|---|---|
-| **Yellow**, black question marks | primary yellow | Welcome & everyday. The signature. | 🔒 exists |
-| **Pop-art magenta**, hearts | accent pink | Community and campaign moments | 🔒 exists |
-| **Blue**, white question marks | primary blue | Teach & explain — roadmap, classes, guides | ⏳ to build |
-| **Green**, yellow question marks | support green | Celebrate — Success Stories, wins | ⏳ to build |
-| **Dark**, white question marks | ink | Protect — scam warnings and safety only | ⏳ to build |
+Three costumes, closed. Each is a signal, not decoration.
 
-The dark costume is the strategic one: when he warns about impersonators he **stops
-performing**. Same character, no circus. The tonal drop is the trust signal, and it is
-counterfeit-resistant — impersonators copy the loud Matthew, never the serious one.
+| Costume | Shirt | Job |
+|---|---|---|
+| **Yellow**, black question marks | black + polka dots | Welcome & everyday. The signature. |
+| **Blue**, white question marks | black + hearts | Teach & explain — roadmap, classes, guides |
+| **Green**, yellow question marks | black + polka dots | Celebrate — Success Stories, wins |
 
-**Orange is not a costume and not a system colour.** He wears it in real photographs, but
-orange sits between yellow (attention) and red (danger) — the two most safety-critical
-signals the brand owns — and would blur exactly the distinction that must never blur.
+**Wardrobe rules** (each learned from a rejected image): the motif is always question
+marks, never blocks or abstract shapes · the shirt ground is always black · the shirt is
+never plainer than the suit · nothing corporate below the neck (no ties, no plain black
+belt) · one print per costume.
+
+**Not adopted:** orange (blurs the yellow/red safety signals) · the multicoloured
+confetti suit (an intricate photographic print that flat comic style cannot reconstruct
+from words — needs a photo of the garment as a second reference) · a dedicated Protect
+costume (tried in dark navy and red, both rejected; the dark version also dropped his
+laugh and read as cold).
+
+⏳ **Protect is an open question, and probably the wrong one.** A warning may be better
+served by yellow Matthew beside a red warning graphic than by dressing him for bad news.
+Decide deliberately before generating a fourth suit.
 
 ### The yellow-suit tension, resolved 🔒
 
