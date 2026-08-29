@@ -112,52 +112,54 @@ proportions so every future generation matches.
 
 ---
 
-## 5. Colour ⏳
+## 5. Colour 🔒 (values) / ⏳ (application)
 
-**Do not treat this section as settled.** Reconciliation pending.
+**Source of truth: `brand/tokens.css`.** Never hand-write a hex; reference a token.
 
-Exact values extracted from real artefacts:
+Eight brand colours, confirmed by Giulia, in three tiers:
 
-*Quick Guide PDF (member-facing, the most recent deliberate work):*
+| Tier | Colour | Hex | On white |
+|---|---|---|---|
+| **Primary** | Blue | `#3655b3` | 6.76:1 |
+| **Primary** | Yellow | `#fdcc0a` | 1.52:1 |
+| Support | Green | `#2ca01c` | 3.41:1 |
+| Support | Mid blue | `#0060ff` | 5.10:1 |
+| Support | Red | `#f93946` | 3.68:1 |
+| Accent | Purple | `#7c3bb0` | 6.75:1 |
+| Accent | Pink | `#ff24b1` | 3.42:1 |
+| Accent | Teal | `#00d6f6` | 1.76:1 |
 
-| Role | Hex |
-|---|---|
-| Body text | `#1a1a1a` |
-| Secondary text | `#555555` |
-| Blue (links, step numbers) | `#2f2f8f` |
-| Gold (attention) | `#c99700` |
-| Red (warning) | `#c8312d` |
-| Green (tip / win) | `#2e7d32` |
+**These are a display palette.** Five of the eight cannot legally carry body text
+on white, and none reaches the brand's 7:1 floor. That is not a fault — they are
+built to be seen, which is right for this brand. The system therefore runs **two
+tiers of the same identity**:
 
-*How We Work Together PDF (internal):*
+- `--display-*` — used exactly as supplied for fills, shapes, illustration,
+  Matthew's suits, backgrounds, charts. Never altered.
+- `--text-*` — the same hue darkened until it clears 7:1 on white, used only when
+  that colour has to carry words.
 
-| Role | Hex |
-|---|---|
-| Near-black | `#0e1a2b` |
-| Dark slate | `#2a3548` |
-| Grey | `#586577` |
-| Blue | `#2c3fa0` |
-| Red | `#e63946` |
-| Yellow | `#fdc830` / `#ffb300` |
-| Green | `#4fa84f` |
-| Cream surface | `#faf6ec` |
+Nothing about the brand's loudness changes. The text tier exists so words stay
+readable for an audience that often cannot read low-contrast type.
 
-**The finding:** the same four-colour system, twice, slightly off each time. The
-semantic assignment is already correct for this audience and must be preserved:
+**Semantic roles carry over from existing work and must be preserved:** blue =
+official and clickable · yellow = pay attention · red = danger and scams · green
+= a win.
 
-- **Blue** = official, trustworthy, the thing you click
-- **Gold / yellow** = pay attention here
-- **Red** = danger, scam, warning
-- **Green** = a win
+### Hard pairing rules
 
-⏳ A third palette is in live use across the community (eight swatches: indigo,
-yellow, green, bright blue, red, purple, magenta, cyan). **Exact hex values still
-needed** — do not sample them by eye.
+| Pairing | Ratio | Rule |
+|---|---|---|
+| Ink `#0e1a2b` on yellow | 11.50 | **The yellow treatment.** Always ink on yellow. |
+| Ink on teal | 9.95 | Fine |
+| White on deep red `#b50511` | 7.01 | **Use this for warning banners** |
+| White on display blue | 6.76 | Large text only (≥24px) |
+| Ink on green | 5.12 | Large text only |
+| **Blue on yellow** | **4.45** | **Never.** The two primaries fail against each other — place them side by side, never one on the other. |
+| White on display red | 3.68 | Never — the scam warnings are the most safety-critical message in the brand and must not sit at this ratio |
 
-⏳ Reconciliation to one value per role, with contrast-checked pairs, is the next
-colour task.
-
----
+⏳ Still open: proportion and distribution rules (how much of each colour, where),
+and per-surface application.
 
 ## 6. Typography ⏳
 
@@ -214,7 +216,7 @@ high-contrast, plain-language standard. Existing assets get reissued, not discar
 
 ## 10. Open questions ⏳
 
-1. Exact hex values for the eight community swatches
+1. ~~Exact hex values~~ — done, see `brand/tokens.css`
 2. Three costume variants + character model sheet
 3. Type scale and pairing
 4. Card suits — deliberate device or template leftover?

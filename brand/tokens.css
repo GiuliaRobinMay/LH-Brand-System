@@ -1,0 +1,74 @@
+/* Lesko Help — colour tokens
+ * Source of truth. Every deliverable derives from this file.
+ *
+ * TWO TIERS, ONE IDENTITY:
+ *   --display-*  the brand colours exactly as supplied. Fills, illustration,
+ *                Matthew's suits, backgrounds, shapes, charts. Never changed.
+ *   --text-*     darkened siblings of the same hue, used ONLY when that colour
+ *                must carry words on a light background. Same hue and
+ *                saturation, lowered lightness until it clears 7:1 on white.
+ *
+ * Every ratio below is measured, not estimated.
+ */
+
+:root {
+  /* ---- PRIMARY ---------------------------------------------------------- */
+  --display-blue:        #3655b3;  /* 6.76:1 on white */
+  --display-yellow:      #fdcc0a;  /* 1.52:1 on white — NEVER text on white */
+
+  /* ---- SUPPORT ---------------------------------------------------------- */
+  --display-green:       #2ca01c;  /* 3.41:1 */
+  --display-blue-mid:    #0060ff;  /* 5.10:1 */
+  --display-red:         #f93946;  /* 3.68:1 */
+
+  /* ---- ACCENT ----------------------------------------------------------- */
+  --display-purple:      #7c3bb0;  /* 6.75:1 */
+  --display-pink:        #ff24b1;  /* 3.42:1 */
+  --display-teal:        #00d6f6;  /* 1.76:1 — NEVER text on white */
+
+  /* ---- TEXT-SAFE SIBLINGS (on white, all ≥ 7:1) ------------------------- */
+  --text-blue:           #3553ae;  /* 7.00:1  links, step numbers, headings   */
+  --text-blue-mid:       #004ecf;  /* 7.02:1  secondary links                 */
+  --text-green:          #1c6712;  /* 7.00:1  success and confirmation copy   */
+  --text-red:            #b50511;  /* 7.01:1  WARNINGS AND SCAM ALERTS        */
+  --text-purple:         #7939ab;  /* 7.03:1                                  */
+  --text-pink:           #ac006f;  /* 7.04:1                                  */
+  --text-teal:           #006271;  /* 7.03:1                                  */
+  --text-yellow:         #6c5601;  /* 7.07:1  rarely needed — prefer ink      */
+
+  /* ---- NEUTRALS --------------------------------------------------------- */
+  --ink:                 #0e1a2b;  /* 17.48:1  body text, default             */
+  --ink-soft:            #243040;  /* 13.36:1  headings on tinted surfaces    */
+  --grey:                #4a5666;  /*  7.46:1  secondary text — meets floor   */
+  --grey-light:          #8a94a3;  /*  3.07:1  DISABLED / borders only        */
+  --rule:                #c9cfd8;  /* dividers                                */
+  --surface-sunken:      #e7eaee;
+  --surface:             #f4f6f8;
+  --white:               #ffffff;
+
+  /* ---- SEMANTIC ROLES --------------------------------------------------- */
+  --role-brand:          var(--display-blue);
+  --role-attention:      var(--display-yellow);
+  --role-danger-fill:    var(--display-red);
+  --role-danger-text:    var(--text-red);
+  --role-success-fill:   var(--display-green);
+  --role-success-text:   var(--text-green);
+  --role-action:         var(--text-blue);
+}
+
+/* ---- VERIFIED PAIRINGS --------------------------------------------------
+ * USE:
+ *   ink on yellow ................ 11.50:1   the highlighter treatment
+ *   ink on teal ..................  9.95:1
+ *   white on deep red (#b50511) ..  7.01:1   warning banners
+ *   white on display blue ........  6.76:1   large text only (≥24px)
+ *   ink on green .................  5.12:1   large text only
+ *
+ * DO NOT USE:
+ *   dark blue on yellow ..........  4.45:1   FAILS — your two mains together.
+ *                                            Put ink on yellow instead, and let
+ *                                            blue sit beside the yellow, not on it.
+ *   yellow on dark blue ..........  4.45:1   same failure, reversed
+ *   white on display red .........  3.68:1   use --text-red as the fill instead
+ *   white on green ...............  3.41:1
+ * ------------------------------------------------------------------------ */
