@@ -21,3 +21,15 @@ python3 -c "from weasyprint import HTML; HTML('body.html').write_pdf('Lesko-Help
 
 Requires `weasyprint` (`pip install weasyprint`). Fonts are local in `fonts/`;
 character images come from `../design/img/`.
+
+## brand-system-page.html — readable in the browser
+
+https://claude.ai/code/artifact/4fef338b-de8e-4110-b2b5-e78734b9264b
+
+The same content as the PDF, as a page you can open without downloading. Set in the
+brand's fonts from Google Fonts, character stills inlined as data URIs, sticky contents
+index, light and dark themes.
+
+Generated from `body.html` by the inline script in the commit that added it — rebuild by
+re-running that transform, or edit `brand-system-page.html` directly and republish the
+same file path to keep the URL.
